@@ -212,5 +212,5 @@ bar {
 # lock
 bindsym $mod+Shift+x exec i3lock --color "$inactive-bg-color"
 
-exec always feh --bg-scale ~/.config/tom_sanchez_bg.png
+exec_always --no-startup-id feh --bg-scale ~/.config/tom_sanchez_bg.png
 
