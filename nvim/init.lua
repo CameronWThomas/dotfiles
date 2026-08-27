@@ -1,3 +1,4 @@
+require("config.filetypes")
 require("config.lazy")
 
 -- Originaly based on this minimalist setup:
@@ -516,3 +517,6 @@ local function setup_dynamic_statusline()
 end
 
 setup_dynamic_statusline()
+
+
+
