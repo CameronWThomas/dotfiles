@@ -152,6 +152,11 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeOpen<CR>", { desc = "Open file explor
 vim.keymap.set("n", "<leader>ff", ":FzfLua ", { desc = "Find file" })
 vim.keymap.set("n", "<C-p>", "<cmd>FzfLua files<cr>", { desc = "Find files" })
 
+
+-- File view modifiers
+vim.keymap.set({ "n", "i", "v" }, "<M-z>", "<Cmd>set wrap!<CR>", { desc = "Toggle line wrap" })
+
+
 -- Basic autocommands
 local augroup = vim.api.nvim_create_augroup("UserConfig", {})
 
