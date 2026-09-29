@@ -1,0 +1,11 @@
+# ignore all 
+/*
+
+# ignore our main folders
+!/composer/
+!/i3/
+!/lazygit/
+!/nvim
+
+# and of course ourself
+!.gitignore
