@@ -1,16 +1,12 @@
 return {
   "nvim-treesitter/nvim-treesitter",
-  branch = "master",
   version = false,
   build = ":TSUpdate",
-  main = "nvim-treesitter.configs",
   opts = {
     ensure_installed = {
       "javascript", "typescript", "tsx",
-      "jsdoc",
       "html", "css", "json", "markdown",
-      "lua", "vim", "vimdoc", "c_sharp",
-      "graphql", "xml"
+      "lua", "vim", "vimdoc",
     },
     auto_install = true,
     highlight = {

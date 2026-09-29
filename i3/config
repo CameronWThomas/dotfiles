@@ -212,6 +212,18 @@ bar {
 # lock
 bindsym $mod+Shift+x exec i3lock --color "$inactive-bg-color"
 
+exec_always --no-startup-id /home/jubal/.screenlayout/workspace-vert.sh
 exec_always --no-startup-id feh --bg-scale ~/.config/tom_sanchez_bg.png
 
-#test update
+# for_window [class="Unity"] floating enable
+for_window [class="Unity"] focus_follows_mouse no
+for_window [class="Unity"] focus_wrapping no
+for_window [class="(?i)unity" window_type="dialog"]  floating enable
+for_window [class="(?i)unity" window_type="utility"] floating enable
+for_window [class="(?i)unity" window_role="pop-up"]  floating enable
+
+# Force Bully to float, remove layout borders, and place it dead-center
+for_window [class="Bully.exe"] floating enable, border none, move position center
+
+
+exec --no-startup-id picom -b
