@@ -6,6 +6,7 @@
 !/i3/
 !/lazygit/
 !/nvim
+!/picom/
 
 # and of course ourself
 !.gitignore
