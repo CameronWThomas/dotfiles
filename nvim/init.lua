@@ -1,3 +1,4 @@
+require("config.filetypes")
 require("config.lazy")
 
 -- Originaly based on this minimalist setup:
@@ -150,6 +151,11 @@ vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
 vim.keymap.set("n", "<leader>e", ":NvimTreeOpen<CR>", { desc = "Open file explorer" })
 vim.keymap.set("n", "<leader>ff", ":FzfLua ", { desc = "Find file" })
 vim.keymap.set("n", "<C-p>", "<cmd>FzfLua files<cr>", { desc = "Find files" })
+
+
+-- File view modifiers
+vim.keymap.set({ "n", "i", "v" }, "<M-z>", "<Cmd>set wrap!<CR>", { desc = "Toggle line wrap" })
+
 
 -- Basic autocommands
 local augroup = vim.api.nvim_create_augroup("UserConfig", {})
@@ -516,3 +522,6 @@ local function setup_dynamic_statusline()
 end
 
 setup_dynamic_statusline()
+
+
+

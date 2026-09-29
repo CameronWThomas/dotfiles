@@ -44,6 +44,10 @@ return {
 			-- lspconfig.ts_ls.setup({
 			-- filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
 			-- })
+      vim.lsp.config("ts_ls", {
+        filetypes = { "javascript", "javascriptreact", "typescript", "typescriptreact" },
+      })
+      vim.lsp.enable("ts_ls")
 
 			-- Tailwind CSS server (optional)
 			-- lspconfig.tailwindcss.setup({
